@@ -54,3 +54,43 @@ document.getElementById('current-year').textContent = new Date().getFullYear();
       // start
       if (el) type();
     })();
+
+(function () {
+  const counters = document.querySelectorAll('.counter-wrap .number[data-number]');
+
+  function animateCounter(counter) {
+    if (counter.dataset.counted === 'true') return;
+    counter.dataset.counted = 'true';
+
+    const target = Number(counter.dataset.number);
+    if (!Number.isFinite(target) || target < 0) return;
+
+    const duration = 5000;
+    const startTime = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = Math.round(target * easedProgress);
+
+      if (progress < 1) requestAnimationFrame(update);
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    counters.forEach(function (counter) { observer.observe(counter); });
+  } else {
+    counters.forEach(animateCounter);
+  }
+})();
