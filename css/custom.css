@@ -1,0 +1,689 @@
+/*======================================
+//--//-->   ABOUT & SKILLS
+======================================*/
+
+    /* ================================
+   CREATIVE RESUME INTRO
+================================ */
+
+    /* ================================
+   EDUCATION
+================================ */
+
+    /* =========================================
+   CREATIVE PROJECT CARDS
+========================================= */
+
+    /* =========================
+   GitHub Showcase
+========================= */
+
+    /* =========================
+   CONTACT SECTION
+========================= */
+
+    .contact-card {
+      width: 100%;
+      padding: 28px 18px;
+      text-align: center;
+
+      background: #151515;
+      border: 1px solid rgba(255, 193, 7, 0.18);
+      border-radius: 15px;
+
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-7px);
+      border-color: #ffc107;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-emoji {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h4 {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      margin: 0;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .contact-card a {
+      color: #ffc107 !important;
+      text-decoration: none;
+    }
+
+
+    /* CTA */
+
+    .contact-cta {
+      margin: 50px auto 35px;
+      padding: 35px 20px;
+
+      border-top: 1px solid rgba(255, 193, 7, 0.15);
+      border-bottom: 1px solid rgba(255, 193, 7, 0.15);
+    }
+
+    .contact-cta h3 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .contact-cta p {
+      color: #aaa;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+
+    /* Social */
+
+    .social-connect {
+      margin: 35px 0 15px;
+    }
+
+    .social-connect p {
+      color: #aaa;
+      margin-bottom: 18px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .social-links a {
+      width: 48px;
+      height: 48px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+      background: #151515;
+      border: 1px solid rgba(255, 193, 7, 0.25);
+
+      font-size: 21px;
+      text-decoration: none;
+
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-5px);
+      border-color: #ffc107;
+      background: #ffc107;
+    }
+
+
+    /* Footer */
+
+    /* =========================
+   CERTIFICATION SECTION
+========================= */
+
+    .certification-card {
+      width: 100%;
+      min-height: 280px;
+
+      position: relative;
+      overflow: hidden;
+
+      padding: 35px 28px;
+      margin-bottom: 30px;
+
+      background: #151515;
+
+      border: 1px solid rgba(255, 193, 7, 0.18);
+      border-radius: 18px;
+
+      text-align: center;
+
+      transition: all 0.35s ease;
+    }
+
+
+    /* Hover */
+
+    .certification-card:hover {
+      transform: translateY(-8px);
+
+      border-color: #ffc107;
+
+      box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(255, 193, 7, 0.08);
+    }
+
+
+    /* Decorative top line */
+
+    .certification-card::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 15%;
+      width: 70%;
+      height: 3px;
+
+      background: #ffc107;
+
+      transform: scaleX(0);
+      transition: transform 0.35s ease;
+    }
+
+    .certification-card:hover::before {
+      transform: scaleX(1);
+    }
+
+
+    /* Certification number */
+
+    .cert-number {
+      position: absolute;
+
+      top: 18px;
+      right: 20px;
+
+      color: rgba(255, 193, 7, 0.35);
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+
+    /* Icon */
+
+    .cert-icon {
+      width: 72px;
+      height: 72px;
+
+      margin: 5px auto 22px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #202020;
+
+      border: 1px solid rgba(255, 193, 7, 0.25);
+
+      border-radius: 50%;
+
+      font-size: 32px;
+
+      transition: all 0.3s ease;
+    }
+
+    .certification-card:hover .cert-icon {
+      transform: scale(1.08) rotate(-5deg);
+
+      border-color: #ffc107;
+
+      background: rgba(255, 193, 7, 0.08);
+    }
+
+
+    /* Title */
+
+    .certification-card h3 {
+      color: #fff;
+
+      font-size: 20px;
+      font-weight: 700;
+
+      line-height: 1.4;
+
+      margin-bottom: 8px;
+    }
+
+
+    /* Provider */
+
+    .cert-provider {
+      color: #ffc107 !important;
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+      margin-bottom: 18px;
+    }
+
+
+
+    /* Tag */
+
+    .cert-tag {
+      display: inline-block;
+
+      padding: 6px 14px;
+
+      color: #ddd;
+
+      font-size: 12px;
+
+      border: 1px solid rgba(255, 193, 7, 0.25);
+
+      border-radius: 30px;
+
+      background: rgba(255, 255, 255, 0.02);
+
+      transition: all 0.3s ease;
+    }
+
+    .certification-card:hover .cert-tag {
+      color: #111;
+
+      background: #ffc107;
+
+      border-color: #ffc107;
+    }
+
+
+    .ftco-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 1.5em 0;
+    }
+
+    .ftco-footer p {
+      color: #777;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    #project-section {
+      padding-bottom: 3em;
+    }
+
+    #certification-section {
+      padding: 3em 0;
+    }
+
+    #contact-section {
+      padding-top: 3em;
+    }
+
+
+    /* Decorative glow */
+
+
+    /* GitHub Icon */
+
+
+    /* Heading */
+
+
+    /* Description */
+
+
+    /* Tech badges */
+
+
+    /* GitHub Button */
+
+
+    /* Mobile */
+
+    .project-card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 25px;
+      transition: all 0.35s ease;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Project number */
+
+    .project-number {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 5;
+
+      width: 38px;
+      height: 38px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #ffbd39;
+      color: #111;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Project title */
+
+    .project-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-emoji {
+      font-size: 22px;
+    }
+
+    .project-title-row h3 {
+      margin: 0;
+    }
+
+    /* Description */
+
+    .project-card p {
+      line-height: 1.7;
+      color: #aaa;
+    }
+
+    /* Technology tags */
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 15px;
+    }
+
+    .project-tags span {
+      padding: 5px 10px;
+
+      border: 1px solid rgba(255, 189, 57, 0.3);
+      border-radius: 15px;
+
+      font-size: 12px;
+      color: #ccc;
+
+      transition: all 0.25s ease;
+    }
+
+    .project-tags span:hover {
+      background: #ffbd39;
+      color: #111;
+      border-color: #ffbd39;
+    }
+
+    /* Image hover */
+
+    .project-card .block-20 {
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover .block-20 {
+      transform: scale(1.03);
+    }
+
+    .education-card {
+      position: relative;
+      padding: 35px 30px !important;
+      margin: 15px;
+      border-radius: 12px;
+      transition: all 0.35s ease;
+      overflow: hidden;
+    }
+
+    .education-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: #ffbd39;
+    }
+
+    .education-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(255, 189, 57, 0.12);
+    }
+
+    .education-card .date {
+      display: inline-block;
+      padding: 7px 15px;
+      border-radius: 20px;
+      background: rgba(255, 189, 57, 0.12);
+      color: #ffbd39;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .education-icon {
+      font-size: 42px;
+      margin: 20px 0 10px;
+    }
+
+    .education-card .position {
+      display: block;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .education-result {
+      font-size: 17px;
+      color: #ffbd39;
+    }
+
+    .resume-intro {
+      font-size: 16px;
+      line-height: 1.9;
+      color: #aaa;
+      max-width: 900px;
+      margin: 0 auto 18px;
+    }
+
+    .resume-download {
+      margin-top: 35px;
+    }
+
+    .resume-download .btn {
+      border-radius: 30px;
+      padding: 12px 28px !important;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 189, 57, 0.15);
+    }
+
+    .resume-download .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 189, 57, 0.3);
+    }
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
+
+
+    /* Typing animation styles (JS-driven) */
+    #typing-animation {
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      white-space: nowrap;
+      vertical-align: middle;
+      margin-top: 6px;
+    }
+
+    /* blinking cursor */
+    #typing-animation::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 1.2em;
+      background: #fff;
+      margin-left: 6px;
+      vertical-align: middle;
+      animation: blink 0.8s steps(2) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    /* My Works dropdown */
+    .my-works-dropdown {
+      display: inline-block;
+      position: relative;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    .my-works-toggle {
+      display: inline-block !important;
+      white-space: nowrap;
+    }
+
+    .my-works-arrow {
+      font-size: 9px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
+    .my-works-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: calc(100% + 8px);
+      min-width: 150px;
+      background: #111;
+      border: 1px solid #555;
+      border-radius: 6px;
+      padding: 6px 0;
+      z-index: 9999;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+    }
+
+    .my-works-menu.show {
+      display: block;
+    }
+
+    .my-works-menu a {
+      display: block;
+      padding: 10px 18px;
+      color: #fff !important;
+      text-decoration: none !important;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .my-works-menu a:hover {
+      background: #ffbd39;
+      color: #111 !important;
+    }
+
+    /* small responsive tweak for the hero buttons */
+    @media (max-width: 576px) {
+      .text .btn {
+        display: block;
+        margin: .6rem auto;
+      }
+
+      .my-works-dropdown {
+        display: block;
+        margin-left: 0;
+      }
+
+      .my-works-dropdown .my-works-toggle {
+        display: inline-block !important;
+      }
+    }
+
+    .tech-arsenal-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      border-left: 4px solid #ffbd39;
+      padding-left: 12px;
+    }
+
+    .certification-footer {
+      text-align: center;
+    }
+
+    .github-showcase {
+      max-width: 1000px;
+      margin: 60px auto 0;
+      padding: 36px;
+      border: 1px solid rgba(255, 189, 57, 0.45);
+      border-radius: 20px;
+      background: #111;
+      text-align: center;
+    }
+
+    .github-showcase .github-content h3 {
+      margin-bottom: 16px;
+    }
+
+    .github-showcase .github-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 18px;
+      margin: 22px 0;
+    }
+
+    .github-showcase .github-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+      .github-showcase {
+        padding: 24px 18px;
+      }
+    }
+
